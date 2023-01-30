@@ -1,0 +1,15 @@
+name: service-invoke-dapr-node-aca
+metadata:
+  template: service-invoke-dapr-node-aca@0.0.1-beta
+services:
+  worker:
+    project: checkout
+    language: python
+    host: containerapp
+    module: app/worker
+  api:
+    project: order-processor
+    language: python
+    host: containerapp
+    module: app/api
+ 
