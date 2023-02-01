@@ -17,7 +17,7 @@ cd order-processor
 pip3 install -r requirements.txt 
 ```
 
-3. Run the order-processor service (callee) service with Dapr: 
+3. Run the order-processor service (callee) with Dapr: 
 
 ```bash
 dapr run --app-port 8001 --app-id order-processor --app-protocol http --dapr-http-port 3501 -- python3 app.py
@@ -32,7 +32,7 @@ cd checkout
 pip3 install -r requirements.txt 
 ```
 
-3. Run the checkout service (callee) service with Dapr: 
+3. Run the checkout service (callee) with Dapr: 
 
 ```bash
 dapr run  --app-id checkout --app-protocol http --dapr-http-port 3500 -- python3 app.py
