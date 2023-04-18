@@ -12,7 +12,7 @@ base_url = os.getenv('BASE_URL', 'http://localhost') + ':' + os.getenv(
 headers = {'dapr-app-id': 'order-processor', 'content-type': 'application/json'}
 
 while(True):
-  for i in range(1, 2000):
+  for i in range(1, 20):
     order = {'orderId': i}
 
     # Invoking a service
