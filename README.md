@@ -7,7 +7,6 @@ languages:
 products:
 - azure
 - azure-container-apps
-- dapr
 urlFragment: svc-invoke-dapr-python
 name: Microservice communication using service invoke (Python)
 description: Create two microservices with Python that communicate using Dapr's Service Invocation API. The Service Invocation API enables your applications to communicate reliably and securely by leveraging auto-mTLS and built-in retries
