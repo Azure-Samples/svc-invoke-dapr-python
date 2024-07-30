@@ -7,6 +7,7 @@ param containerRegistryName string = ''
 param logAnalyticsWorkspaceName string = ''
 param applicationInsightsName string = ''
 param daprEnabled bool = false
+param vnetName string
 
 module containerAppsEnvironment 'container-apps-environment.bicep' = {
   name: '${name}-container-apps-environment'
@@ -17,6 +18,7 @@ module containerAppsEnvironment 'container-apps-environment.bicep' = {
     logAnalyticsWorkspaceName: logAnalyticsWorkspaceName
     applicationInsightsName: applicationInsightsName
     daprEnabled: daprEnabled
+    vnetName: vnetName
   }
 }
 
